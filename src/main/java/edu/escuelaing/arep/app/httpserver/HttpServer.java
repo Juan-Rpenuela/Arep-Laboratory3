@@ -46,7 +46,7 @@ public class HttpServer {
 
     public static void startServer(String[] args) throws IOException, URISyntaxException {
         loadServices(args);
-        staticfiles("C:\\Escuela Colombiana de ingenieria\\Semestre 9\\AREP\\Arep-Laboratory3\\resources"); // Configurar el directorio de archivos estáticos
+        staticfiles("resources");
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(35000);
